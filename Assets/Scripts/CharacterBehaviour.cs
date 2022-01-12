@@ -11,7 +11,7 @@ public class CharacterBehaviour : MonoBehaviour
 
     [SerializeField] private bool running;
     [SerializeField] private float runSpeed = 3, swerveSpeed = 2;
-    private int maxStack = 20;
+    [SerializeField] private int maxStack = 20;
     [SerializeField] private Transform stackStart;
     [SerializeField] private List<GameObject> stacks = new List<GameObject>();
 

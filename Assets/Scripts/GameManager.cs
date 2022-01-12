@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
         SavedDataHandler.Instance.stackUpgrade++;
         upgradeButton.text = string.Format("Currency {0} | Upgrade {1}", SavedDataHandler.Instance.currency, SavedDataHandler.Instance.stackUpgrade);
         SavedDataHandler.Instance.SaveScore();
+        FindObjectOfType<CharacterBehaviour>().GetMaxStack();
     }
     public void ResetProgress()
     {

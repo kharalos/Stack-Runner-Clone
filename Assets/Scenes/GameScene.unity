@@ -820,7 +820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374078640
@@ -2648,7 +2648,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 2100000, guid: 9fedf135db458274ab4b2510e6968c91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6643,13 +6643,13 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minVertexDistance: 0.2
+    minVertexDistance: 1.03
     textureMode: 0
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
     dieWithParticles: 1
-    sizeAffectsWidth: 1
+    sizeAffectsWidth: 0
     sizeAffectsLifetime: 0
     inheritParticleColor: 1
     generateLightingData: 0
@@ -6721,7 +6721,7 @@ ParticleSystem:
     widthOverTrail:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.13
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7436,7 +7436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.293}
   m_AnchorMax: {x: 1, y: 0.38958332}
-  m_AnchoredPosition: {x: 0.0008544922, y: -1.7579956}
+  m_AnchoredPosition: {x: 0.0008544922, y: -1.7580566}
   m_SizeDelta: {x: -0.32998657, y: -0.59259796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742849329
@@ -7648,7 +7648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.293}
   m_AnchorMax: {x: 1, y: 0.38958332}
-  m_AnchoredPosition: {x: 0.0008544922, y: -1.7579956}
+  m_AnchoredPosition: {x: 0.0008544922, y: -1.7580566}
   m_SizeDelta: {x: -0.32998657, y: -0.59259796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1785539671
@@ -8321,6 +8321,7 @@ MonoBehaviour:
   running: 0
   runSpeed: 3
   swerveSpeed: 2
+  maxStack: 20
   stackStart: {fileID: 1341549654}
   stacks: []
 --- !u!136 &919132149538558326
